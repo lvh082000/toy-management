@@ -35,12 +35,12 @@
 
   <div class="row form-group mb-4">
     <div class="col">
-      <label for="tel">Production Date</label>
+      <label for="productionDate">Production Date</label>
       <input
         type="text"
         class="form-control"
-        id="tel"
-        name="tel"
+        id="productionDate"
+        name="productionDate"
         value="<%= customer.productionDate %>"
         placeholder="Production Date"
         required
@@ -50,12 +50,12 @@
 
   <div class="row form-group mb-4">
     <div class="col">
-      <label for="tel">Price</label>
+      <label for="price">Price</label>
       <input
         type="text"
         class="form-control"
-        id="tel"
-        name="tel"
+        id="price"
+        name="price"
         value="<%= customer.price %>"
         placeholder="Price"
         required
@@ -107,8 +107,7 @@
       <div class="modal-body">
         <p>
           This will remove the toy record of
-          <b class="fw-bold"><%= customer.name %></b
-          ><br />
+          <b class="fw-bold"><%= customer.name %></b><br />
           Are you sure?
         </p>
       </div>
@@ -121,9 +120,7 @@
           method="POST"
           class="position-relative"
         >
-          <button type="submit" class="btn btn-primary">
-            Yes, Remove toy
-          </button>
+          <button type="submit" class="btn btn-primary">Yes, Remove toy</button>
         </form>
       </div>
     </div>
